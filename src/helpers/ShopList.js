@@ -18,4 +18,10 @@ export const ShopList = [
         image: Image3,
         price: 1,
     },
+
+    {
+        name: "Tokyo Ghoul2",
+        image: ToykoGhoul,
+        price: 1, 
+    }
 ];
