@@ -20,8 +20,8 @@ export const ShopList = [
     },
 
     {
-        name: "Image 3",
-        image: Image3,
+        name: "Tokyo Ghoul2",
+        image: ToykoGhoul,
         price: 1, 
     }
 ];
