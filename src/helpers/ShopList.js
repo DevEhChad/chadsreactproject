@@ -18,4 +18,10 @@ export const ShopList = [
         image: Image3,
         price: 1,
     },
+
+    {
+        name: "Image 3",
+        image: Image3,
+        price: 1, 
+    }
 ];
