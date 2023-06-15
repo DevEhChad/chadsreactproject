@@ -1,5 +1,5 @@
 .home {
-  width: 100%;
+  width: 100svw;
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -52,14 +52,22 @@
   transition: 0.3s ease-in;
 }
 
-@media only screen and (max-width: 650px) {
+.discordint iframe {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 50svh;
+}
+
+@media only screen and (max-width: 765px) {
   .home {
     justify-content: center;
     align-items: center;
   }
-  .headerContainer h1,
+  .headerContainer h1, 
   .headerContainer p {
-  }
+    display: flex;
+  } 
 
   .headerContainer {
     margin-left: 0px;
@@ -94,5 +102,11 @@
   .headerContainer button:hover {
     background-color: rgb(225, 225, 225);
     color: #121619;
+  }
+
+  .discordint iframe {
+    margin-left: 10svw;
+    width: 60svw;
+    height: 350px;
   }
 }

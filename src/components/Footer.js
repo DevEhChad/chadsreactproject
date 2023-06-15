@@ -14,7 +14,7 @@ function Footer() {
         <a href="https://www.facebook.com/"><FacebookIcon /> </a> 
         <a href="https://www.linkedin.com/"><LinkedInIcon /> </a>
       </div>
-      <p> &copy; 2023 chadstestsite.com</p>
+      <p> &copy; 2023 ehchadservices.com</p>
     </div>
   );
 }
