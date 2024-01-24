@@ -6,7 +6,7 @@ import "../styles/Shop.css";
 function Shop() {
   return (
     <div className="shop">
-      <h1 className="shopTitle">Test Shop</h1>
+      <h1 className="shopTitle">Not Actually A Shop</h1>
       <div className="shopList">
         {ShopList.map((shopItem, key) => {
           return (

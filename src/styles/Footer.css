@@ -10,11 +10,12 @@
   z-index: 1000;
 }
 
-.socialMedia svg {
+.socialMedia svg, .socialMedia a {
   color: white;
   margin: 20px;
   font-size: 70px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .footer p {

@@ -10,7 +10,7 @@ function Contact() {
         style={{ backgroundImage: `url(${TrainLeft})` }}
       ></div>
       <div className="rightSide">
-        <h1> Contact Us</h1>
+        <h1>*Page Currently Doesn't Work*</h1>
 
         <form id="contact-form" method="POST">
           <label htmlFor="name">Full Name</label>
