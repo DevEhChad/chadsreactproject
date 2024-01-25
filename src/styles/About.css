@@ -1,13 +1,13 @@
 .about {
     width: 100%;
-    height: 90svh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
   
   .aboutTop {
-    width: 100svw;
-    height: 35%;
+    width: 100vw;
+    height: 45%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,9 +17,10 @@
   .aboutBottom {
     display: flex;
     flex-direction: column;
-    height: 55%;
+    height: 100%;
     align-items: center;
     margin-top: 50px;
+    padding-bottom: 10px;
   }
   
   .aboutBottom p {
