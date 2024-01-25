@@ -14,8 +14,10 @@
 .headerContainer {
   border-radius: 10px;
   height: auto;
-  width: auto;
+  width: 50svw;
   margin-left: 30px;
+  padding: 16px;
+  background-color: rgba(105, 105, 105, 0.16);
 }
 
 .headerContainer h1 {
@@ -68,6 +70,7 @@
   border: 1px solid black;
   padding: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
   z-index: 1001;
 }
 
@@ -130,8 +133,60 @@
   }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-width: 1030px) {
   .discordint iframe {
     display: none;
   }
 }
+
+@media only screen and (max-width: 920px),(max-height: 630px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer h1, 
+  .headerContainer p {
+    display: flex;
+  } 
+
+  .headerContainer {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .headerContainer button {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer button:hover {
+    background-color: #1500ff;
+    color: rgb(255, 255, 255);
+  }
+
+  .discordint iframe {
+    display: none;
+  }
+  
+}
+
