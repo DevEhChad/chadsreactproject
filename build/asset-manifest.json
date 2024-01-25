@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.087a310d.css",
+    "main.js": "/static/js/main.04b43a96.js",
+    "static/js/787.264b71c2.chunk.js": "/static/js/787.264b71c2.chunk.js",
+    "static/media/MytwitchBanner.png": "/static/media/MytwitchBanner.7e6d238fe1f72356cd5a.png",
+    "static/media/Tokyo-Ghoul-Wallpaper-For-PC.jpg": "/static/media/Tokyo-Ghoul-Wallpaper-For-PC.3a4eb3e1677a0231dbb6.jpg",
+    "static/media/1132066.jpg": "/static/media/1132066.830e0815c15f9fb74063.jpg",
+    "static/media/1132065.jpg": "/static/media/1132065.5ed00e48e022b9fa51e5.jpg",
+    "static/media/1132051.jpg": "/static/media/1132051.55dcf24d3e6ca150fab3.jpg",
+    "static/media/BannerTemplate.jpg": "/static/media/BannerTemplate.38f33cb86bf8410cc9b2.jpg",
+    "index.html": "/index.html",
+    "main.087a310d.css.map": "/static/css/main.087a310d.css.map",
+    "main.04b43a96.js.map": "/static/js/main.04b43a96.js.map",
+    "787.264b71c2.chunk.js.map": "/static/js/787.264b71c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.087a310d.css",
+    "static/js/main.04b43a96.js"
+  ]
+}
