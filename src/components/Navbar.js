@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/images.png';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import '../styles/Navbar.css'
 
@@ -16,17 +16,17 @@ function Navbar() {
         <div className='leftSide' id={openLinks ? "open" : "close"}>
             <img src={Logo} />
             <div className='hiddenLinks'>        
-            <Link to="/"> Home </Link>
-            <Link to="/shop"> Shop </Link>
-            <Link to="/about"> About </Link>
-            <Link to="/contact"> Contact </Link>
+            <NavLink to="/"> Home </NavLink>
+            <NavLink to="/shop"> Shop </NavLink>
+            <NavLink to="/about"> About </NavLink>
+            <NavLink to="/contact"> Contact </NavLink>
             </div>
         </div>
         <div className='rightSide'>
-          <Link to="/"> Home </Link>
-          <Link to="/shop"> Shop </Link>
-          <Link to="/about"> About </Link>
-          <Link to="/contact"> Contact </Link>
+            <NavLink to="/"> Home </NavLink>
+            <NavLink to="/shop"> Shop </NavLink>
+            <NavLink to="/about"> About </NavLink>
+            <NavLink to="/contact"> Contact </NavLink>
           <button onClick={toggleNavbar}>
             <ReorderIcon />
           </button>
