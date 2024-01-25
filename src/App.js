@@ -1,4 +1,5 @@
 import "./App.css";
+import {Helmet} from "react-helmet";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -10,6 +11,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Eh Chad Services</title>
+                <link rel="canonical" href="http://ehchadservices.com/" />
+                <meta name="description" content="Testing Website" />
+            </Helmet>
       <Router>
         <Navbar />
         <Routes>
