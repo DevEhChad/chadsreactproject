@@ -1,0 +1,25 @@
+.socialBody {
+    width: 100svw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 150px;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.social1 {
+    border-radius: 15px;
+    height: auto;
+    width: 100px;
+    padding: 16px;
+    background-color: rgba(255, 0, 0, 0.16);
+}
+
+.social2 {
+    border-radius: 15px;
+    height: auto;
+    width: 100px;
+    padding: 16px;
+    background-color: rgba(255, 0, 0, 0.16);
+}

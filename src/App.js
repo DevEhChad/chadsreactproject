@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
+import Socials from "./pages/Socials";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -24,6 +25,8 @@ function App() {
           <Route path="/" exact element={<Home />} />
           
           <Route path="/shop" exact element={<Shop />} />
+
+          <Route path="/socials" exact element={<Socials />} />
           
           <Route path="/about" exact element={<About />} />
          
