@@ -11,7 +11,7 @@ function Socials() {
         
         <div className="socialButton1">
 
-            <a class="btn" href="https://discord.gg/brQXPhQ" target="_blank">Join the Cord!</a>
+            <a class="btn" href="https://discord.gg/brQXPhQ" target="_blank" rel="noreferrer">Join the Cord!</a>
 
         </div>
 
@@ -24,7 +24,7 @@ function Socials() {
 
             <div className="socialButton2">
 
-            <a class="btn" href="https://discord.gg/brQXPhQ" target="_blank">Join the Cord2!</a>
+            <a class="btn" href="https://discord.gg/brQXPhQ" target="_blank" rel="noreferrer">Join the Cord2!</a>
             
             </div>
 
