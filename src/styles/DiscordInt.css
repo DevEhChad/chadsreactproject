@@ -1,0 +1,100 @@
+.discordint iframe {
+        position: fixed;
+        display: flex;
+        bottom: 20px;
+        right: 20px;
+        height: 350px;
+        width: 400px;
+        background-color: black;
+        border: 1px solid black;
+        padding: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10%;
+        z-index: 1001;
+}
+
+.discordint .discord-minimized button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.discordint .discord-minimized svg {
+    font-size: 40px;
+}
+
+.discordint #open {
+    padding-left: 0px;
+}
+
+.discordint #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+}
+
+.discordint #close .hiddenLinks {
+    display: none;
+}
+
+.discordint #open a {
+    width: 70px;
+    margin: 5px;
+}
+
+
+@media only screen and (max-width: 765px) {
+    .discordint .discord-minimized a {
+        width: 65px;
+    }
+
+    .discordint .discord-opened {
+        padding-left: 50px;
+    }
+
+
+    .discordint iframe {
+        display: none;
+    }
+
+    .discordint .discord-minimized button {
+        display: inherit;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .discordint .discord-minimized a {
+        display: none;
+    }
+
+    .discord .discord-opened a {
+        padding-left: 50px;
+    }
+    
+    .discordint iframe {
+        display: none;
+    }
+    
+    .discordint .discord-minimized button {
+        display: inherit;
+    }
+}
+  
+@media only screen and (max-width: 1030px) {
+    .discordint iframe {
+        display: none;
+    }
+    .discordint .discord-minimized button {
+        display: inherit;
+    }
+}
+
+@media only screen and (max-width: 920px),(max-height: 630px) {
+    .discordint iframe {
+        display: none;
+    }
+    .discordint .discord-minimized button {
+        display: inherit;
+    }
+}

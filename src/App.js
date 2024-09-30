@@ -2,6 +2,7 @@ import "./App.css";
 import {Helmet} from "react-helmet";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Discord from "./components/DiscordInt"
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Socials from "./pages/Socials";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/contact" exact element={<Contact />} />
   
         </Routes>
+        <Discord />
         <Footer />
       </Router>
     </div>

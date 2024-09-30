@@ -59,21 +59,6 @@
   transition: 0.3s ease-in;
 }
 
-.discordint iframe {
-  position: fixed;
-  display: flex;
-  bottom: 20px;
-  right: 20px;
-  height: 350px;
-  width: 400px;
-  background-color: black;
-  border: 1px solid black;
-  padding: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10%;
-  z-index: 1001;
-}
-
 @media only screen and (max-width: 765px) {
   .home {
     justify-content: center;
@@ -118,10 +103,6 @@
     background-color: #1500ff;
     color: rgb(255, 255, 255);
   }
-
-  .discordint iframe {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -134,9 +115,7 @@
 }
 
 @media only screen and (max-width: 1030px) {
-  .discordint iframe {
-    display: none;
-  }
+  
 }
 
 @media only screen and (max-width: 920px),(max-height: 630px) {
@@ -182,10 +161,6 @@
   .headerContainer button:hover {
     background-color: #1500ff;
     color: rgb(255, 255, 255);
-  }
-
-  .discordint iframe {
-    display: none;
   }
   
 }

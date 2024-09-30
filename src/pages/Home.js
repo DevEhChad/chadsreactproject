@@ -13,9 +13,6 @@ function Home() {
           <button> About Page </button>
         </Link>
         </div>
-        <div className="discordint">
-        <iframe src="https://discord.com/widget?id=573633846587817992&theme=dark"></iframe>
-        </div>
     </div>
   );
 }
