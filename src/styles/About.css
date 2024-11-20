@@ -11,10 +11,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: sans-serif, Arial;
   }
   
   .aboutBottom {
+    font-family: 'Comic Sans', monospace, sans-serif, Arial;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -41,7 +42,7 @@
   }
 
   .discordInvAbout, .discordInvAbout a {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: 'Comic Sans', monospace, sans-serif, Arial;
     background-color: #121619;
     display: flex;
     justify-content: center;
@@ -55,7 +56,6 @@
   }
   
   .discordInvAbout a:hover {
-    background-color: black;
     text-decoration: none;
     font-size: 28px;
     cursor: pointer;

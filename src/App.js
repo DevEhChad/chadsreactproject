@@ -31,7 +31,7 @@ function App() {
           
           <Route path="/about" exact element={<About />} />
          
-          <Route path="/contact" exact element={<Contact />} />
+          {/* <Route path="/contact" exact element={<Contact />} /> */}
   
         </Routes>
         <Discord />
