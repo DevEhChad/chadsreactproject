@@ -1,0 +1,27 @@
+.application {
+    width: 100svw;
+    height: 100svh;
+    background-color: gray;
+}
+
+.ECMMContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20%;
+    background-color: blue;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-family: sans-serif, Arial;
+    font-weight: bold;
+}
+
+.ECMMweb {
+    width: 70%;
+    
+    justify-content: center;
+}
