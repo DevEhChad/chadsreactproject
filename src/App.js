@@ -28,7 +28,7 @@ function App() {
           
           {/* <Route path="/shop" exact element={<Shop />} /> */}
 
-          <Route path="/applications" exact element={<Applications />} />
+          {/*<Route path="/applications" exact element={<Applications />} /> */}
 
           <Route path="/socials" exact element={<Socials />} />
           

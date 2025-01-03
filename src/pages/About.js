@@ -11,9 +11,9 @@ function About() {
       <div className="aboutBottom">
         <h1> ABOUT ME</h1>
         <p>
-        Hello, My name is Chad! Nice to meet you! I'm currently working toward my goals on trying to become a developer and a content creator. 
-        I have done a couple projects on C#, C++ and JavaScript. My Goal is to learn C#, C++, JavaScript so I can be more fluent.
-        If you have any pointers, or are a developer or even a gamer, please join the discord! Also, Don't forget to look at my YouTube channel and other Socials! 
+        Hi there! I'm Chad, and I'm passionate about becoming a developer and content creator. I'm actively pursuing these goals by expanding my skillset in various programming languages and software.<br></br><br></br>
+        Currently, I'm focusing on mastering C#, C++, and JavaScript, and I've already completed a few projects using these languages. I'm also proficient in 3D design with Fusion 360 and am always eager to learn new programs.<br></br><br></br>
+        I'd love to connect with fellow developers, gamers, and anyone interested in tech or content creation! Feel free to join my Discord server, and don't forget to check out my YouTube channel and other social media. 
         </p>
         <div className="discordInvAbout">
         <a class="btn" href="https://discord.gg/brQXPhQ" target="_blank" rel="noopener noreferrer">Join The Discord!</a>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/images.png';
+import Logo from '../assets/IMG_0771.jpg';
 import { NavLink } from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import '../styles/Navbar.css'
@@ -17,7 +17,7 @@ function Navbar() {
             <img src={Logo} />
             <div className='hiddenLinks'>        
             <NavLink to="/"> Home </NavLink>
-            <NavLink to="/applications"> Apps </NavLink>
+            {/* <NavLink to="/applications"> Apps </NavLink> */}
             <NavLink to="/socials"> Socials </NavLink>
             <NavLink to="/about"> About </NavLink>
            {/* <NavLink to="/contact"> Contact </NavLink> */}
@@ -25,7 +25,7 @@ function Navbar() {
         </div>
         <div className='rightSide'>
             <NavLink to="/"> Home </NavLink>
-            <NavLink to="/applications"> Apps </NavLink>
+            {/* <NavLink to="/applications"> Apps </NavLink> */}
             <NavLink to="/socials"> Socials </NavLink>
             <NavLink to="/about"> About </NavLink>
            {/* <NavLink to="/contact"> Contact </NavLink> */}
