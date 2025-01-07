@@ -61,6 +61,10 @@
 }
 
 @media only screen and (max-width: 1300px) {
+  .social {
+    height: 100%;
+  }
+
   .socialList {
     grid-template-columns: 1fr 1fr;
   }
