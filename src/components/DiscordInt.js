@@ -4,26 +4,26 @@ import '../styles/DiscordInt.css'
 
 function DiscordInt() {
 
-  const [openLinks, setOpenLinks] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(false);
 
-  const toggleDiscordInt = () => {
-    setOpenLinks(!openLinks);
+  const toggleMinimize = () => {
+    setIsMinimized(!isMinimized);
   };
+
   return (
-      <div className='discordint'>
-        <div className='discord-opened' id={openLinks ? "open" : "close"}>
-            <div className='hiddenLinks'>
-            <div className='discordiframe'><iframe src="https://discord.com/widget?id=573633846587817992&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>     
-            </div>
-            </div>
-        <div className='discord-minimized'>
-            <div className='discordiframe'><iframe src="https://discord.com/widget?id=573633846587817992&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
-            <button onClick={toggleDiscordInt}>
-                <ReorderIcon />
-          </button>
-        </div>
-        </div>
-  )
-}
+    <div className={`discord-container ${isMinimized ? 'minimized' : ''}`}>
+      <div className="discord-iframe">
+        <iframe
+          src="https://discord.com/widget?id=573633846587817992&theme=dark"
+          frameborder="0"
+          title="Discord Widget"
+        ></iframe>
+      </div>
+      <button className="discord-toggle" onClick={toggleMinimize}>
+        <span>{isMinimized ? '▲' : '▼'}</span>
+      </button>
+    </div >
+  );
+};
 
 export default DiscordInt
