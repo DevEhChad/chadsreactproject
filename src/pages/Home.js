@@ -15,8 +15,7 @@ function Home() {
         <Link to='about'>
           <button> About Page </button>
         </Link>
-
-        </div>
+      </div>
     </div>
   );
 }

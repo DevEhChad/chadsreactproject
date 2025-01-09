@@ -1,6 +1,6 @@
 .home {
   width: 100svw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -64,10 +64,11 @@
     justify-content: center;
     align-items: center;
   }
-  .headerContainer h1, 
+
+  .headerContainer h1,
   .headerContainer p {
     display: flex;
-  } 
+  }
 
   .headerContainer {
     margin-left: 0px;
@@ -106,28 +107,29 @@
 }
 
 @media only screen and (max-width: 500px) {
+
   .headerContainer,
   .headerContainer h1,
   .headerContainer p {
     justify-content: center;
     display: flex;
-    
+
   }
 }
 
-@media only screen and (max-width: 1030px) {
-  
-}
+@media only screen and (max-width: 1030px) {}
 
-@media only screen and (max-width: 920px),(max-height: 630px) {
+@media only screen and (max-width: 920px),
+(max-height: 630px) {
   .home {
     justify-content: center;
     align-items: center;
   }
-  .headerContainer h1, 
+
+  .headerContainer h1,
   .headerContainer p {
     display: flex;
-  } 
+  }
 
   .headerContainer {
     margin-left: 0px;
@@ -163,6 +165,5 @@
     background-color: red;
     color: rgb(255, 255, 255);
   }
-  
-}
 
+}

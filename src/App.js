@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Socials from "./pages/Socials";
 import About from "./pages/About";
+import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
 import Applications from "./pages/Applications";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,28 +15,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Eh Chad Services</title>
-        <link rel="canonical" href="http://ehchadservices.com/" />
-        <meta name="description" content="ehchadservices.com" />
-      </Helmet>
       <Router>
         <Navbar />
         <Routes>
-
           <Route path="/" exact element={<Home />} />
-
           {/* <Route path="/shop" exact element={<Shop />} /> */}
-
           {/*<Route path="/applications" exact element={<Applications />} /> */}
-
           <Route path="/socials" exact element={<Socials />} />
-
           <Route path="/about" exact element={<About />} />
-
           {/* <Route path="/contact" exact element={<Contact />} /> */}
-
+          <Route path="/TermsOfService" exact element={<TermsOfService />} />
         </Routes>
         <Discord />
         <Footer />

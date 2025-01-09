@@ -21,3 +21,14 @@
 .footer p {
   color: rgb(0, 255, 13);
 }
+
+.importantInfo a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.importantInfo a:hover {
+  color: red;
+  text-decoration: underline;
+}

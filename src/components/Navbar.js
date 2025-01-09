@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/IMG_0771.jpg';
+import Logo from '../assets/favicon.jpg';
 import { NavLink } from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import '../styles/Navbar.css'
@@ -12,28 +12,28 @@ function Navbar() {
     setOpenLinks(!openLinks);
   };
   return (
-      <div className='navbar'>
-        <div className='leftSide' id={openLinks ? "open" : "close"}>
-            <img src={Logo} />
-            <div className='hiddenLinks'>        
-            <NavLink to="/"> Home </NavLink>
-            {/* <NavLink to="/applications"> Apps </NavLink> */}
-            <NavLink to="/socials"> Socials </NavLink>
-            <NavLink to="/about"> About </NavLink>
-           {/* <NavLink to="/contact"> Contact </NavLink> */}
-            </div>
-        </div>
-        <div className='rightSide'>
-            <NavLink to="/"> Home </NavLink>
-            {/* <NavLink to="/applications"> Apps </NavLink> */}
-            <NavLink to="/socials"> Socials </NavLink>
-            <NavLink to="/about"> About </NavLink>
-           {/* <NavLink to="/contact"> Contact </NavLink> */}
-          <button onClick={toggleNavbar}>
-            <ReorderIcon />
-          </button>
+    <div className='navbar'>
+      <div className='leftSide' id={openLinks ? "open" : "close"}>
+        <img src={Logo} />
+        <div className='hiddenLinks'>
+          <NavLink to="/"> Home </NavLink>
+          {/* <NavLink to="/applications"> Apps </NavLink> */}
+          <NavLink to="/socials"> Socials </NavLink>
+          <NavLink to="/about"> About </NavLink>
+          {/* <NavLink to="/contact"> Contact </NavLink> */}
         </div>
       </div>
+      <div className='rightSide'>
+        <NavLink to="/"> Home </NavLink>
+        {/* <NavLink to="/applications"> Apps </NavLink> */}
+        <NavLink to="/socials"> Socials </NavLink>
+        <NavLink to="/about"> About </NavLink>
+        {/* <NavLink to="/contact"> Contact </NavLink> */}
+        <button onClick={toggleNavbar}>
+          <ReorderIcon />
+        </button>
+      </div>
+    </div>
   )
 }
 

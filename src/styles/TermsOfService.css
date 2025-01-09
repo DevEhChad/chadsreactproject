@@ -1,0 +1,20 @@
+.terms-container {
+    max-width: 800px;
+    /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.terms-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.terms-container h3 {
+    margin-top: 30px;
+}
+
+.terms-container p {
+    line-height: 1.6;
+}
