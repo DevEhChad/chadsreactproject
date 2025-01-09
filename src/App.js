@@ -1,5 +1,4 @@
 import "./App.css";
-import { Helmet } from "react-helmet";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Discord from "./components/DiscordInt"
