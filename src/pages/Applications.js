@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Applications.css";
 import ECMM from "../assets/ECMMweb.png";
+import { Helmet } from 'react-helmet';
 
 function Applications() {
   return (

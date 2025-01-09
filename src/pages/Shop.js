@@ -2,6 +2,7 @@ import React from "react";
 import { ShopList } from "../helpers/ShopList";
 import ShopItem from "../components/ShopItem";
 import "../styles/Shop.css";
+import { Helmet } from 'react-helmet';
 
 function Shop() {
   return (

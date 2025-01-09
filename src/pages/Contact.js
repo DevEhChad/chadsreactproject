@@ -1,6 +1,7 @@
 import React from "react";
 import TrainLeft from "../assets/1132066.jpg";
 import "../styles/Contact.css";
+import { Helmet } from 'react-helmet';
 
 function Contact() {
   return (
