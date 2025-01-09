@@ -1,9 +1,15 @@
 import React from 'react';
-import '../styles/TermsOfService.css'; // Import your CSS file
+import '../styles/TermsOfService.css';
+import { Helmet } from 'react-helmet';
 
 function TermsOfService() {
     return (
         <div className="terms-container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Terms Of Service</title>
+                <link rel="canonical" href="https://ehchadservices.com/TermsOfService" />
+            </Helmet>
             <h2>Terms of Service</h2>
             <p>Welcome to ehchadservices.com. These Terms of Service ("Terms") govern your access to and use of our website and services. By accessing or using ehchadservices.com, you agree to be bound by these Terms. If you disagree with any part of the Terms, then you may not access the website.</p>
 

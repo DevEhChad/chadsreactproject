@@ -5,6 +5,11 @@ import "../styles/Contact.css";
 function Contact() {
   return (
     <div className="contact">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact</title>
+        <link rel="canonical" href="https://ehchadservices.com/contact" />
+      </Helmet>
       <div
         className="leftSide"
         style={{ backgroundImage: `url(${TrainLeft})` }}

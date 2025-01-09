@@ -3,18 +3,23 @@ import "../styles/Applications.css";
 import ECMM from "../assets/ECMMweb.png";
 
 function Applications() {
-    return (
-      <div className="application">
+  return (
+    <div className="application">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Applications</title>
+        <link rel="canonical" href="https://ehchadservices.com" />
+      </Helmet>
 
-        <div className="ECMMContainer">
-            <div className="title">
-                <h1>EhChads Mod Manager</h1>
-            </div>
-            <img className="ECMMweb" src={ECMM} />
-        
+      <div className="ECMMContainer">
+        <div className="title">
+          <h1>EhChads Mod Manager</h1>
         </div>
+        <img className="ECMMweb" src={ECMM} />
+
       </div>
-    );
-  }
-  
-  export default Applications;
+    </div>
+  );
+}
+
+export default Applications;
