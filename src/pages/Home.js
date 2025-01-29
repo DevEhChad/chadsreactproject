@@ -9,7 +9,7 @@ function Home() {
     <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>EhChadServices</title>
+        <title>ECS - Home</title>
         <link rel="canonical" href="https://ehchadservices.com" />
       </Helmet>
       <div className="headerContainer">
