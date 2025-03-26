@@ -19,10 +19,10 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           {/* <Route path="/shop" exact element={<Shop />} /> */}
-          {/*<Route path="/applications" exact element={<Applications />} /> */}
+          <Route path="/applications" exact element={<Applications />} /> 
           <Route path="/socials" exact element={<Socials />} />
           <Route path="/about" exact element={<About />} />
-          {/* <Route path="/contact" exact element={<Contact />} /> */}
+          <Route path="/contact" exact element={<Contact />} />
           <Route path="/TermsOfService" exact element={<TermsOfService />} />
         </Routes>
         <Discord />

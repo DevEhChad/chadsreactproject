@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../assets/favicon.jpg';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import '../styles/Navbar.css'
 
@@ -14,7 +14,9 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className='leftSide' id={openLinks ? "open" : "close"}>
-        <img src={Logo} />
+        <a href='https://localhost:3000'>
+        <img src={Logo} href="https://localhost:3000" />
+        </a>
         <div className='hiddenLinks'>
           <NavLink to="/"> Home </NavLink>
           {/* <NavLink to="/applications"> Apps </NavLink> */}
