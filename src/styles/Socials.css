@@ -1,11 +1,13 @@
 .social {
-  background-color: gray;
+  background-color: rgb(194, 187, 187);
   width: 100%;
-  height: 100svh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 100px 15px; /* Added padding for navbar/footer and side margins */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
 }
 
 .social .socialTitle {
@@ -14,57 +16,82 @@
 }
 
 .socialList {
-  width: 70vw;
+  width: 100%;
+  max-width: 1200px; /* Use max-width for better responsiveness */
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  justify-items: center; /* Center items horizontally, align-items will default to stretch */
+  align-items: stretch; /* Explicitly force all items in a row to be the same height */
 }
 
 /* social ITEM STYLING */
 
 .socialItem {
-  background-color: lightgray;
+  background-color: #e0e0e0; /* A softer, off-white background */
   border-radius: 15px;
-  width: 300px;
-  height: 350px;
+  border: 1px solid #000000; /* A light border for definition */
+  width: 100%; /* Ensure item fills its grid column */
+  max-width: 300px;
   margin: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* A more subtle, modern shadow */
+  display: flex; /* Use flexbox for better content alignment */
+  flex-direction: column; /* Stack children vertically */
+  position: relative; /* Establishes a positioning context for the link */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .socialItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in;
+  box-shadow: 0 4px 12px rgb(36, 36, 36); /* A slightly larger, soft shadow on hover */
   cursor: pointer;
+  transform: translateY(-5px);
 }
 
 .socialItem div {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 100%;
+  /* Pull the image over the parent's border to hide it on the top and sides */
+  width: calc(100% + 2px);
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: -1px -1px 0 -1px;
 }
 
+/* Style the link to look like normal text */
 .socialItem a {
   text-decoration: none;
-  color: black;
-  margin: 20px;
-  font-size: 20px;
+  color: inherit;
+}
+
+/* This is the magic part: stretch the link's clickable area */
+.socialItem a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .socialItem h1,
 .socialItem p {
   margin-left: 20px;
+  margin-right: 20px; /* Add right margin for better text wrapping */
+}
+
+.socialItem h1 {
+  color: #212529; /* Dark gray for headings */
+}
+
+.socialItem p {
+  margin-top: auto; /* This pushes the paragraph to the bottom of the card */
+  padding-bottom: 20px; /* Add some space for aesthetics */
+  color: #495057; /* A slightly lighter gray for body text */
 }
 
 @media only screen and (max-width: 1300px) {
-  .social {
-    height: 100%;
-  }
-
   .socialList {
     grid-template-columns: 1fr 1fr;
   }

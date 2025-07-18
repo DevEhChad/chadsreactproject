@@ -1,10 +1,12 @@
 .shop {
     width: 100%;
-    height: auto;
+    min-height: 100vh; /* Ensure it takes at least full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 100px 15px; /* Add padding for navbar/footer */
+    box-sizing: border-box; /* Include padding in height/width calculation */
   }
 
   .shop .shopTitle {
@@ -13,21 +15,25 @@
   }
   
   .shopList {
-    width: 70vw;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for very large screens */
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    justify-items: center; /* Center items horizontally, align-items will default to stretch */
   }
 
   /* SHOP ITEM STYLING */
   
   .shopItem {
     border-radius: 15px;
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    max-width: 300px;
+    /* The grid now controls the height, so we can remove the explicit height property */
     margin: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flexbox for better content alignment */
+    flex-direction: column; /* Stack children vertically */
   }
   .shopItem:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
@@ -46,8 +52,14 @@
   }
   
   .shopItem h1,
-  .shopItem p {
+  .shopItem p { /* This rule applies to both the title and price */
     margin-left: 20px;
+    margin-right: 20px; /* Add right margin for better text wrapping */
+  }
+
+  .shopItem p {
+    margin-top: auto; /* This pushes the price to the bottom of the card */
+    padding-bottom: 20px; /* Add some space below the price */
   }
   
   @media only screen and (max-width: 1300px) {

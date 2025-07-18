@@ -1,8 +1,11 @@
 import TwitchLogo from "../assets/TwitchLogo.png";
+import KickLogo from "../assets/Kicklogo.png";
+import TikTokLogo from "../assets/TikTokLogo.png"
 import TwitterXLogo from "../assets/Twitter-XLogo.jpg";
 import InstagramLogo from "../assets/InstagramLogo.png";
 import YoutubeLogo from "../assets/youtube.png";
 import GitHubLogo from "../assets/GithubLogo.png";
+import GiteaLogo from "../assets/gitealogo.png";
  
 export const SocialList = [
     {
@@ -10,6 +13,20 @@ export const SocialList = [
         name: "Twitch",
         image: TwitchLogo,
         link: <a href="https://www.twitch.tv/ehchad" target="_blank">Check Out My Twitch!</a>
+    },
+
+    {
+        hiddenLink: <a href="https://kick.com/ehchad" target="_blank" />,
+        name: "Kick",
+        image: KickLogo,
+        link: <a href="https://kick.com/ehchad" target="_blank">Check Out My Kick!</a>
+    },
+
+    {
+        hiddenLink: <a href="https://www.tiktok.com/@eh_chad" target="_blank" />,
+        name: "TikTok",
+        image: TikTokLogo,
+        link: <a href="https://www.tiktok.com/@eh_chad" target="_blank">Check Out My TikTok!</a>
     },
 
     {
@@ -38,5 +55,12 @@ export const SocialList = [
         name: "GitHub",
         image: GitHubLogo,
         link: <a href="https://github.com/DevEhChad" target="_blank">Check Out My GitHub!</a>
+    },
+
+    {
+        hiddenLink: <a href="https://gitea.ecsgameservers.com/chad" target="_blank" />,
+        name: "Gitea (Self Hosted)",
+        image: GiteaLogo,
+        link: <a href="https://gitea.ecsgameservers.com/chad" target="_blank">Check Out My Gitea!</a>
     }
 ];
