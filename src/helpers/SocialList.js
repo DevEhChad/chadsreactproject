@@ -44,10 +44,10 @@ export const SocialList = [
     },
 
     {
-        hiddenLink: <a href="https://youtube.com/@ehchad?si=Xc1HCJieEdTGHSWU" target="_blank" />,
+        hiddenLink: <a href="https://www.youtube.com/channel/UC3H33ordT_-qpMjUvY95ILg" target="_blank" />,
         name: "Youtube",
         image: YoutubeLogo,
-        link: <a href="https://youtube.com/@ehchad?si=Xc1HCJieEdTGHSWU" target="_blank">Check Out My YouTube!</a>
+        link: <a href="https://www.youtube.com/channel/UC3H33ordT_-qpMjUvY95ILg" target="_blank">Check Out My YouTube!</a>
     },
 
     {
